@@ -1,0 +1,96 @@
+h1 {
+	font-family: 'Julius Sans One', sans-serif;
+	margin: 0.3em 0;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0.3em 0;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: 0.5em;
+	border-bottom: 1px dotted @grey;
+}
+
+h4 {
+	font-family: 'Allura', cursive;
+}
+
+p, a, span, div, label, input, td, textarea {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.1em;
+	color: @grey;
+	margin: 0 0 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav { 
+	text-decoration: none;
+	color: #6a6a6a;
+}
+
+.nav:before {
+	color: @white;
+    content: attr(data-hover);
+    position: absolute;
+    margin-top: 1px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.nav:hover:before {
+	opacity: 0;
+	transform: scale(0.9);
+}
+
+h1 {
+	color: @white;
+	font-size: 8em;
+	margin: 0;
+	text-align: center;
+}
+
+h2, h2:hover {
+	color: @grey;
+	text-align: center;
+	padding: 5em 0 3em;
+	font-size: 4em;
+	font-weight: 400;
+	font-family: 'Quicksand', sans-serif;
+}
+
+form {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  float: left;
+}
+
+label{
+  color: @grey;
+}
+
+input, textarea {
+  .border-radius(5px);
+  background: #3e3e3d;
+  min-height: 50px;
+  border: none;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 10px;
+  color: @white;
+
+	&.error {
+		border: 1px solid red;
+	}
+}
+
+textarea {
+  padding: 15px 10px;
+}

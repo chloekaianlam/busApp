@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js ie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="robots" content="all" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>London Bus Arrival Time</title>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD9sF3zQ5TYU1iSLrgC5KQmtnJKbEkQLTc&sensor=true">
+    </script>
+
+  </head>
+  <!-- Organise code above as a header include file -->
+
+  <body>
+    
+    <aside class="sidebar">
+      <p>Tell us your location: (e.g. Angel, Baker Street, NW1)</p>
+      <input type="text" id="address" class="search-field" value="" placeholder="where are you?" />
+      <input type='submit' id="submit" class="btn" value="Search" />
+      <!-- bus info goes here, i.e. name, routes, time of arrival -->
+
+      <article class="content">
+        <div class="bus-stop-pane"></div>
+
+        <div class="info-pane"></div>
+
+        <button class="backBtn">Back to results</button>
+
+      </article>
+    </aside>
+    
+    <div id="map-canvas"></div>
+
+  </body>
+
+  <!-- Organise code below as a footer include file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/min/jquery.min.js"><\/script>')</script>
+  <script src="js/libs/mustache.js"></script>
+
+  <!-- Development version, minify when ready for production -->
+  <script src="js/script.js"></script>
+  
+  <!-- Production version, better performance using minified script for live site -->
+  <!-- <script src="js/min/script.min.js"></script> -->
+</html>
